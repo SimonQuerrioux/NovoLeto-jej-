@@ -13,3 +13,9 @@
 	import { categories } from './data';
 	import Card from './Card.svelte';
 </script>
+
+<div class="grid grid-cols-3 gap-2">
+	{#each categories as c}
+		<Card category={c}></Card>
+	{/each}
+</div>

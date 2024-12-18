@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import '../app.css';
 
 	/**
@@ -12,9 +13,14 @@
 </script>
 
 <nav class="w-full h-24 bg-sky-300 flex items-center justify-center gap-5">
-	<div>Prva</div>
-	<div>Druga</div>
-	<div>Tretja</div>
+	<div><a href="/" class={$page.url.pathname === '/' ? 'font-bold' : ''}>Domov</a></div>
+	<div>
+		<a href="/prva" class={$page.url.pathname === '/prva' ? 'font-bold' : ''}>Prva</a>
+	</div>
+	<div><a href="/druga" class={$page.url.pathname === '/druga' ? 'font-bold' : ''}>Druga</a></div>
+	<div>
+		<a href="/tretja" class={$page.url.pathname === '/tretja' ? 'font-bold' : ''}>Tretja</a>
+	</div>
 </nav>
 
 <div class="p-5 h-full">
