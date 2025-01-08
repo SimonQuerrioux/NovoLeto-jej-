@@ -39,6 +39,7 @@
 				{sodo ? 'SODO' : 'LIHO'}
 			</p>
 		</div>
+		1
 		<div>
 			<button
 				class="bg-white border-2 border-blue-500 m-3 p-2 rounded-3xl text-4xl text-center hover:bg-slate-200 duration-500 transition-colors"

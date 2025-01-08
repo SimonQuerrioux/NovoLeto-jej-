@@ -21,12 +21,17 @@
 	};
 
 	// Priprava spremenljivk
-	let items: Item[] = [{ name: 'Banana', price: 10 }]; // seznam vseh izdelkov
+	let items: Item[] = [
+		{ name: 'Banana', price: 10.99 },
+		{ name: 'Jabolko', price: 1199.99 }
+	]; // seznam vseh izdelkov
 	let newItemName = ''; // ime novega izdelka
 	let newItemPrice = 0; // cena novega izdelka
 
 	// Ustvarimo funkcijo, ki bo dodajala nove izdelke v seznam:
 	function addItem() {
+		items.push({ name: newItemName, price: newItemPrice });
+
 		// Pazi: Izdelek dodaj samo, če ima ime in neničelno ceno!
 		// Potem ko dodamo izdelek, ponastavi vrednosti za novi izdelek
 	}
