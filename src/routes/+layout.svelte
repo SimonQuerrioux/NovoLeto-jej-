@@ -21,6 +21,9 @@
 	<div>
 		<a href="/tretja" class={$page.url.pathname === '/tretja' ? 'font-bold' : ''}>Tretja</a>
 	</div>
+	<div>
+		<a href="/yearbook" class={$page.url.pathname === '/yearbook' ? 'font-bold' : ''}>Živali</a>
+	</div>
 </nav>
 
 <div class="p-5 h-full">
